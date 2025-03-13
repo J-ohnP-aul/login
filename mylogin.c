@@ -82,6 +82,7 @@ void loginsite()
                 takeInput(passwordcmp);
 
                 fpr = fopen("database.dat","r");
+                
 
                 while(fread(&std1,sizeof(struct student),1,fpr)){
                     if(!strcmp(std1.userName,usernamecmp)){
